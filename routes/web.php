@@ -17,10 +17,6 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/Galeri', [HomeController::class, 'galeri'])->name('galeri');
 Route::get('/Artikel & Blog', [ArtikelController::class, 'index'])->name('artikel');
 Route::get('/artikel/{slug}', [ArtikelController::class, 'show'])->name('artikel.show');
-Route::get('/Pengaduan dan aspirasi', [PengaduanController::class, 'index'])->name('pengaduan');
-Route::post('/pengaduan/post', [PengaduanController::class, 'store'])->name('pengaduan.store');
-Route::get('/Administrasi dan kependudukan', [AdministrasiController::class, 'index'])->name('Administrasi');
-Route::post('/administrasi/post', [AdministrasiController::class, 'store'])->name('administrasi.store');
 Route::get('/Tentang Kami', [SosialController::class, 'index'])->name('sosial');
 
 Route::post('/synthesize', function (Request $request) {
